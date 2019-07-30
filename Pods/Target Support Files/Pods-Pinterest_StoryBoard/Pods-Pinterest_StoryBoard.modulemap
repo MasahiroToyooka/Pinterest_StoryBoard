@@ -1,0 +1,6 @@
+framework module Pods_Pinterest_StoryBoard {
+  umbrella header "Pods-Pinterest_StoryBoard-umbrella.h"
+
+  export *
+  module * { export * }
+}

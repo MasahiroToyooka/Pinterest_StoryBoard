@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="yyy-1V-tP5" customClass="MainCollectionViewCell" customModule="Pinterest_StoryBoard" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="356" height="481"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="356" height="481"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ceR-YG-LBf">
+                        <rect key="frame" x="0.0" y="0.0" width="356" height="361"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fVP-oF-LbX">
+                        <rect key="frame" x="0.0" y="361" width="356" height="120"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="s8w-uv-NCV">
+                                <rect key="frame" x="8" y="8" width="340" height="61"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YSH-Fl-dWo">
+                                        <rect key="frame" x="0.0" y="0.0" width="55.5" height="61"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="お寿司のネタ名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IPP-LV-e8e">
+                                        <rect key="frame" x="63.5" y="0.0" width="276.5" height="61"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="IPP-LV-e8e" secondAttribute="trailing" constant="8" id="GyA-lC-ACr"/>
+                                    <constraint firstItem="IPP-LV-e8e" firstAttribute="width" secondItem="YSH-Fl-dWo" secondAttribute="width" multiplier="5" id="hhO-zz-kid"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  英語名：　Sushi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j4g-dx-LOS">
+                                <rect key="frame" x="8" y="105" width="340" height="7"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.49705874919999998" green="0.6730425954" blue="0.37638089060000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="お値段：　300円" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="55j-mJ-tiM">
+                                <rect key="frame" x="8" y="77" width="340" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="j4g-dx-LOS" secondAttribute="trailing" constant="8" id="3cp-St-ZJp"/>
+                            <constraint firstItem="s8w-uv-NCV" firstAttribute="leading" secondItem="fVP-oF-LbX" secondAttribute="leading" constant="8" id="7Hq-aM-uah"/>
+                            <constraint firstItem="j4g-dx-LOS" firstAttribute="top" secondItem="55j-mJ-tiM" secondAttribute="bottom" constant="8" id="IGK-Lv-Hov"/>
+                            <constraint firstAttribute="trailing" secondItem="55j-mJ-tiM" secondAttribute="trailing" constant="8" id="J0t-sF-MZI"/>
+                            <constraint firstItem="55j-mJ-tiM" firstAttribute="top" secondItem="s8w-uv-NCV" secondAttribute="bottom" constant="8" id="JTp-xM-lAn"/>
+                            <constraint firstItem="j4g-dx-LOS" firstAttribute="leading" secondItem="fVP-oF-LbX" secondAttribute="leading" constant="8" id="NTd-0d-g0r"/>
+                            <constraint firstAttribute="bottom" secondItem="j4g-dx-LOS" secondAttribute="bottom" constant="8" id="Q2O-bM-tiG"/>
+                            <constraint firstItem="s8w-uv-NCV" firstAttribute="top" secondItem="fVP-oF-LbX" secondAttribute="top" constant="8" id="ecl-e0-0Aq"/>
+                            <constraint firstItem="55j-mJ-tiM" firstAttribute="leading" secondItem="fVP-oF-LbX" secondAttribute="leading" constant="8" id="mVw-W5-2jl"/>
+                            <constraint firstAttribute="trailing" secondItem="s8w-uv-NCV" secondAttribute="trailing" constant="8" id="qOG-wb-QRi"/>
+                            <constraint firstItem="s8w-uv-NCV" firstAttribute="height" secondItem="55j-mJ-tiM" secondAttribute="height" multiplier="3" id="wHA-A4-z6a"/>
+                            <constraint firstItem="55j-mJ-tiM" firstAttribute="height" secondItem="j4g-dx-LOS" secondAttribute="height" multiplier="3" id="wqi-QU-ldK"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="fVP-oF-LbX" firstAttribute="leading" secondItem="yyy-1V-tP5" secondAttribute="leading" id="1pm-bu-o1U"/>
+                <constraint firstItem="ceR-YG-LBf" firstAttribute="height" secondItem="fVP-oF-LbX" secondAttribute="height" multiplier="3" id="5rV-IH-0pL"/>
+                <constraint firstItem="ceR-YG-LBf" firstAttribute="leading" secondItem="yyy-1V-tP5" secondAttribute="leading" id="LS6-Fj-mXd"/>
+                <constraint firstItem="ceR-YG-LBf" firstAttribute="top" secondItem="yyy-1V-tP5" secondAttribute="top" id="b5s-sE-QBB"/>
+                <constraint firstAttribute="trailing" secondItem="ceR-YG-LBf" secondAttribute="trailing" id="hPg-zT-oIo"/>
+                <constraint firstItem="fVP-oF-LbX" firstAttribute="bottom" secondItem="yyy-1V-tP5" secondAttribute="bottom" id="n8I-Qb-Cxk"/>
+                <constraint firstAttribute="trailing" secondItem="fVP-oF-LbX" secondAttribute="trailing" id="xQX-5s-48b"/>
+                <constraint firstItem="fVP-oF-LbX" firstAttribute="top" secondItem="ceR-YG-LBf" secondAttribute="bottom" id="xoY-ww-bHB"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="4c8-nU-M88"/>
+            <size key="customSize" width="356" height="481"/>
+            <connections>
+                <outlet property="englishLabel" destination="j4g-dx-LOS" id="WbV-0G-GFS"/>
+                <outlet property="foodImageView" destination="ceR-YG-LBf" id="DVB-DV-xZN"/>
+                <outlet property="iconImageView" destination="YSH-Fl-dWo" id="vZz-Ar-FuS"/>
+                <outlet property="nameLabel" destination="IPP-LV-e8e" id="cw3-hJ-zyh"/>
+                <outlet property="priceLabel" destination="55j-mJ-tiM" id="dm5-p8-Wpm"/>
+            </connections>
+            <point key="canvasLocation" x="-189.85507246376812" y="-89.397321428571431"/>
+        </collectionViewCell>
+    </objects>
+</document>
