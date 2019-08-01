@@ -22,6 +22,11 @@
 		C1219C1322F01E8A0009D57F /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1219C1222F01E8A0009D57F /* MainCollectionViewCell.swift */; };
 		C1219C1E22F0220B0009D57F /* MainCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1219C1D22F0220B0009D57F /* MainCollectionViewCell.xib */; };
 		C1219C2122F041B70009D57F /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1219C2022F041B70009D57F /* Detail.storyboard */; };
+		C1219C2322F1638E0009D57F /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1219C2222F1638E0009D57F /* UIColorExtension.swift */; };
+		C1219C2622F168AD0009D57F /* MainCollectionReusableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1219C2522F168AD0009D57F /* MainCollectionReusableHeaderView.swift */; };
+		C1219C3022F16C710009D57F /* MainCollectionReusableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1219C2F22F16C700009D57F /* MainCollectionReusableHeaderView.xib */; };
+		C1219C3322F17A350009D57F /* AnimationDetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1219C3222F17A350009D57F /* AnimationDetailHeaderView.swift */; };
+		C1219C3522F17B350009D57F /* AnimationDetailHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1219C3422F17B350009D57F /* AnimationDetailHeaderView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +48,11 @@
 		C1219C1222F01E8A0009D57F /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = "<group>"; };
 		C1219C1D22F0220B0009D57F /* MainCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainCollectionViewCell.xib; sourceTree = "<group>"; };
 		C1219C2022F041B70009D57F /* Detail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Detail.storyboard; sourceTree = "<group>"; };
+		C1219C2222F1638E0009D57F /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		C1219C2522F168AD0009D57F /* MainCollectionReusableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionReusableHeaderView.swift; sourceTree = "<group>"; };
+		C1219C2F22F16C700009D57F /* MainCollectionReusableHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainCollectionReusableHeaderView.xib; sourceTree = "<group>"; };
+		C1219C3222F17A350009D57F /* AnimationDetailHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationDetailHeaderView.swift; sourceTree = "<group>"; };
+		C1219C3422F17B350009D57F /* AnimationDetailHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnimationDetailHeaderView.xib; sourceTree = "<group>"; };
 		E63DA51F910CDDA7497E78DA /* Pods_Pinterest_StoryBoard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pinterest_StoryBoard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -98,7 +108,6 @@
 				C1219BF022EFE4D30009D57F /* MainViewController.swift */,
 				C1219BF522EFE4D40009D57F /* Assets.xcassets */,
 				C1219BFA22EFE4D40009D57F /* Info.plist */,
-				C1219C0022EFE70B0009D57F /* CustomBaseView.swift */,
 			);
 			path = Pinterest_StoryBoard;
 			sourceTree = "<group>";
@@ -108,6 +117,7 @@
 			children = (
 				C1219C0422EFF11A0009D57F /* UICollectionViewExtension.swift */,
 				C1219C0922F00FDD0009D57F /* NSObjectProtocolExtension.swift */,
+				C1219C2222F1638E0009D57F /* UIColorExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -139,6 +149,9 @@
 		C1219C1122F01E7D0009D57F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C1219C0022EFE70B0009D57F /* CustomBaseView.swift */,
+				C1219C3122F17A1D0009D57F /* AnimationDetailHeaderView */,
+				C1219C2422F168940009D57F /* MainCollectionReusableHeaderView */,
 				C1219C1422F01F3B0009D57F /* MainCollectionViewCell */,
 			);
 			path = View;
@@ -161,6 +174,24 @@
 				C1219C2022F041B70009D57F /* Detail.storyboard */,
 			);
 			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		C1219C2422F168940009D57F /* MainCollectionReusableHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				C1219C2522F168AD0009D57F /* MainCollectionReusableHeaderView.swift */,
+				C1219C2F22F16C700009D57F /* MainCollectionReusableHeaderView.xib */,
+			);
+			path = MainCollectionReusableHeaderView;
+			sourceTree = "<group>";
+		};
+		C1219C3122F17A1D0009D57F /* AnimationDetailHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				C1219C3222F17A350009D57F /* AnimationDetailHeaderView.swift */,
+				C1219C3422F17B350009D57F /* AnimationDetailHeaderView.xib */,
+			);
+			path = AnimationDetailHeaderView;
 			sourceTree = "<group>";
 		};
 		FB4DBE91DF6B5BD219E4C428 /* Frameworks */ = {
@@ -232,10 +263,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1219BF922EFE4D40009D57F /* LaunchScreen.storyboard in Resources */,
+				C1219C3522F17B350009D57F /* AnimationDetailHeaderView.xib in Resources */,
 				C1219BF622EFE4D40009D57F /* Assets.xcassets in Resources */,
 				C1219BF422EFE4D30009D57F /* Main.storyboard in Resources */,
 				C1219C2122F041B70009D57F /* Detail.storyboard in Resources */,
 				C1219C1E22F0220B0009D57F /* MainCollectionViewCell.xib in Resources */,
+				C1219C3022F16C710009D57F /* MainCollectionReusableHeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,6 +329,9 @@
 				C1219C0A22F00FDD0009D57F /* NSObjectProtocolExtension.swift in Sources */,
 				C1219BF122EFE4D30009D57F /* MainViewController.swift in Sources */,
 				C1219C1022F0147E0009D57F /* FoodPresenter.swift in Sources */,
+				C1219C2322F1638E0009D57F /* UIColorExtension.swift in Sources */,
+				C1219C2622F168AD0009D57F /* MainCollectionReusableHeaderView.swift in Sources */,
+				C1219C3322F17A350009D57F /* AnimationDetailHeaderView.swift in Sources */,
 				C1219C1322F01E8A0009D57F /* MainCollectionViewCell.swift in Sources */,
 				C1219BEF22EFE4D30009D57F /* AppDelegate.swift in Sources */,
 			);
